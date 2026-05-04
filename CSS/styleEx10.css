@@ -73,9 +73,11 @@ a {
 /* LISTA PRINCIPAL */
 .menu ul {
     list-style: none;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 auto;
     max-width: 800px;
+    margin-left: 440px;
+    text-align: center;
 }
 
 .menu ul li {
@@ -129,40 +131,13 @@ a {
 }
 
 .roda {
-            z-index: 999;
-            height: 330px;
-            background-color: #000000;
-            /* foolder, parte de trás*/
-        }
+    z-index: 999;
+    height: 330px;
+    background-color: #000000;
+    /* foolder, parte de trás*/
+}
 
-        .roda .down_up {
-            text-align: center;
-            color: rgb(255, 255, 255);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 4em;
-            /* Cor e fonte do texto dentro do foolder */
-        }
-
-        .roda .down_meio {
-            text-align: center;
-            color: rgb(255, 255, 255);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 1.5em;
-            text-align: center;
-            /* Cor e fonte do texto dentro do foolder */
-        }
-
-        .roda .down_down {
-            text-align: center;
-            /* centraliza o texto*/
-        }
-
-        .roda .down_down img {
-            width: 40px;
-            border-radius: 25px;
-            border: 4px rgb(255, 255, 255) dotted;
-            cursor: pointer;
-            margin: 20px;
-            padding: 5px;
-            /* O negocio que fica ao redor do whatzap, facebook e instagram */
-        }
+.roda p {
+    margin-left: 600px;
+    color: white;
+}

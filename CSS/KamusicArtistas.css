@@ -9,12 +9,12 @@ body {
     margin-top: -140px;
 }
 
-.cab .menu p {
-    font-size: 20px;
-}
-
 .cab {
     background-color: rgb(47, 47, 47);
+}
+
+.menu-button{
+    cursor:pointer;
 }
 
 .menu-button div {
@@ -25,10 +25,10 @@ body {
     border-radius: 1px;
 }
 
-.menu-block{
-    display:inline-flex;
-    margin-left:100px;
-    margin-top:60px;
+.menu-block {
+    display: inline-flex;
+    margin-left: 100px;
+    margin-top: 60px;
 }
 
 .main {
@@ -39,11 +39,70 @@ body {
     font-size: 17px;
     font-weight: 600;
     color: white;
-    margin:0;
-    margin-left:15px;
+    margin: 0;
+    margin-left: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu p{
-    color:white;
+.menu{
+    display:flex;
+    margin-top:-60px;
+}
+
+.menu a{
+    color: white;
+    flex:1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    justify-content: center;
+    padding-top:20px;
+    padding-bottom:10px;
+    border-top:1px solid gray;
+}
+
+.menu #home{
+    transition: 0.2s;
+    box-shadow: inset 0 -6px 0 0 blue; 
+}
+
+.menu #home:hover{
+    margin-top:-7px;
+    background-color: gray;
+    box-shadow: inset 0 -10px 0 0 rgb(79, 173, 255);
+}
+
+.menu #sobre{
+    border-bottom: 6px solid red;
+    transition: 0.2s;
+}
+
+.menu #sobre:hover{
+    margin-top:-7px;
+    background-color: gray;
+    border-bottom: 10px solid rgb(224, 47, 47);
+}
+
+.menu #estilos{
+    border-bottom: 6px solid green;
+    transition: 0.2s;
+}
+
+.menu #estilos:hover{
+    margin-top:-7px;
+    background-color: gray;
+    border-bottom: 10px solid rgb(74, 224, 47);
+}
+
+.menu #artistas{
+    border-bottom: 6px solid yellow;
+    transition: 0.2s;
+}
+
+.menu #artistas:hover{
+    margin-top:-7px;
+    background-color: gray;
+    border-bottom: 10px solid rgb(224, 197, 47);
 }

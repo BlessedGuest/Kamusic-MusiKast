@@ -208,3 +208,11 @@ Botão de menu:
 }
 
 */
+.box-sobrenos{
+columns: 3;
+column-gap: 20px;
+border-style: outside;
+border-bottom: #000000;
+border-width: 1px;
+border-radius: 10px;    
+}

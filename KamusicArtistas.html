@@ -1,31 +1,45 @@
+<!-- Indica ao navegador que este é um documento moderno do tipo HTML5 -->
 <!DOCTYPE html>
+<!-- Define que a página está escrita no idioma português do Brasil -->
 <html lang="pt-br">
 
 <head>
+    <!-- Configura o código para aceitar acentos e caracteres especiais (ex: á, ç, õ) -->
     <meta charset="UTF-8">
+    <!-- Faz o site se ajustar automaticamente ao tamanho da tela de celulares e computadores -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o texto que aparece na aba do navegador -->
     <title>KaMusic - Artistas</title>
+    <!-- Insere o pequeno ícone com o logotipo do site na aba do navegador -->
     <link rel="shortcut icon" size="16x16" href="IMG/Logo.png">
+    <!-- Conecta este arquivo de texto ao primeiro arquivo externo de estilo (CSS do Menu) -->
     <link rel="stylesheet" href="CSS/KamusicMenu.css">
+    <!-- Conecta este arquivo ao segundo arquivo externo de estilo (CSS da página de Artistas) -->
     <link rel="stylesheet" href="CSS/KamusicArtistas.css">
     <!--Para possíveis ícones: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">-->
 </head>
 
 <body>
+    <!-- Bloco que agrupa os links de navegação para telas menores ou rodapés móveis -->
     <div class="menu-abaixo">
+        <!-- Links direcionando o usuário para outras páginas do mesmo site -->
         <a id="home" class="a" href="KamusicIndex.html">Home</a>
         <a id="sobre" class="a" href="KamusicSobrenos.html">Sobre Nós</a>
         <a class="h1" href="KamusicIndex.html">KaMusic</a>
         <a id="estilos" class="a" href="KamusicGeneros.html">Estilos Musicais</a>
         <a id="artistas" class="a" href="KamusicArtistas.html">Artistas e músicas</a>
     </div>
+    <!-- Bloco principal do cabeçalho fixo no topo da página -->
     <div class="cab">
+        <!-- Caixa que guarda o título principal do cabeçalho -->
         <div class="cab-titulo">
             <h1>KaMusic</h1>
         </div>
+        <!-- Caixa que exibe a imagem do logotipo em cor branca com largura definida -->
         <div class="cab-logo">
             <img src="IMG/WhiteLogo.png" width="280">
         </div>
+        <!-- Caixa do menu de navegação tradicional do topo do site -->
         <div class="menu">
             <a id="home" href="KamusicIndex.html">Home</a>
             <a id="sobre" href="KamusicSobrenos.html">Sobre Nós</a>
@@ -33,34 +47,45 @@
             <a id="artistas" href="KamusicArtistas.html">Artistas e músicas</a>
         </div>
     </div>
+    <!-- Indica a área de conteúdo principal e exclusivo desta página -->
     <main>
+        <!-- Caixa que envelopa todo o conteúdo interno da página -->
         <div class="main">
+            <!-- Imagem de banner principal ocupando 95% da largura disponível -->
             <img src="IMG/BannerArt.png" width="95%">
+            <!-- Seção dedicada ao gênero musical Hip Hop -->
             <div>
+                <!-- Parágrafo simples atuando como título do gênero -->
                 <p>Hip Hop</p>
+                <!-- Bloco do artista Tupac -->
                 <div>
                     <p>Tupac Shakur: O Poeta do Caos e da Esperança</p>
                     <img src="IMG/BannerTupac.png" width="95%">
                 </div>
+                <!-- Bloco do artista Eminem -->
                 <div>
                     <p>Eminem: O Arquiteto das Rimas e o Anti-Herói do Pop</p>
                     <img src="IMG/BannerSlimShady.png" width="95%">
                 </div>
             </div>
+            <!-- Seção dedicada ao gênero musical Rock -->
             <div>
                 <p>Rock</p>
+                <!-- Bloco da banda Iron Maiden -->
                 <div>
                     <p>Iron Maiden: Os Guardiões do Metal e da História</p>
                     <img src="IMG/BannerIronMaiden.png" width="95%">
                 </div>
+                <!-- Bloco da banda Linkin Park -->
                 <div>
                     <p>Linkin Park: A Voz de uma Geração em Conflito</p>
                     <img src="IMG/BannerLinkinParkOp2.png" width="95%">
                 </div>
             </div>
+            <!-- Seção de texto autoral sobre a filosofia da música e dos artistas -->
             <div>
                 <p>O Artista: O Arquiteto da Alma e do Tempo</p>
-                <p>A música, em sua essência física, é apenas uma sucessão de frequências e silêncios. O que a
+                <p>A música, em sua essence física, é apenas uma sucessão de frequências e silêncios. O que a
                     transforma em
                     uma força capaz de derrubar muros ou curar corações é a presença do artista. Se os gêneros são os
                     mapas,
@@ -99,19 +124,25 @@
                     eles, a música seria apenas som; com eles, ela é a prova de que estivemos aqui, de que sentimos, de
                     que
                     lutamos e de que, acima de tudo, fomos ouvidos.</p>
+                <!-- Bloco estruturado para exibir uma citação -->
                 <div>
+                    <!-- Tag usada para destacar blocos de frases famosas ou citações textuais -->
                     <blockquote>
                         "A arte é o que nos permite não morrer da verdade."
                     </blockquote>
+                    <!-- Indica a fonte ou o autor da citação feita acima -->
                     <cite>
+                        <!-- Aplica o efeito de texto em Negrito no nome do autor -->
                         <b> Friedrich Nietzsche.</b>
                     </cite>
                 </div>
             </div>
         </div>
     </main>
+    <!-- Define o rodapé com as informações finais no término da página -->
     <footer>
         <div>
+            <!-- Texto simples informando o ano e as propriedades de direitos autorais -->
             <p>© 2026 KaMusic. Todos os direitos reservados.</p>
         </div>
     </footer>

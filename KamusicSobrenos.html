@@ -3,46 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KaMusic - Sobre Nós</title>
-    <link rel="shortcut icon" size="16x16" href="IMG/Logo.png">
+    <title> Exercicio 11 CSS</title>
+    <link rel="stylesheet" type="text/css" href="CSS/KamusicMenu.css">
 </head>
 
 <body>
-    <header>
-        <section style="font-size: 30px;">
-            <figure style="text-align: right; margin-bottom: -150px">
-                <img src="IMG/Logo.png" width="20%">
-            </figure>
-            <h1 style="text-align: left; margin-left:30px;">KaMusic</h1>
-        </section>
-        <hr>
-        <nav>
-            <div style="text-align: center; font-size: 20px;">
-                <h3>
-                    <!-- Aqui dentro vai ficar os negocios dos outros sites -->
-                    <section>
-                        <a style="color: black;" href="KamusicIndex.html">
-                            <button>
-                                <p style="font-size:15px">Home</p>
-                            </button></a>
-                        <a style="color: black" href="KamusicSobrenos.html">
-                            <button>
-                                <p style="font-size:15px">Sobre Nós</p>
-                            </button></a>
-                        <a style="color: black" href="KamusicGeneros.html">
-                            <button>
-                                <p style="font-size:15px">Estilos Musicais</p>
-                            </button></a>
-                        <a style="color: black" href="KamusicArtistas.html">
-                            <button>
-                                <p style="font-size:15px">Artistas e músicas</p>
-                            </button></a> <!--final-->
-                    </section>
-                </h3>
+    <div class="menu-abaixo">
+        <a id="home" class="a" href="KamusicIndex.html">Home</a>
+        <a id="sobre" class="a" href="KamusicSobrenos.html">Sobre Nós</a>
+        <a class="h1" href="KamusicIndex.html">KaMusic</a>
+        <a id="estilos" class="a" href="KamusicGeneros.html">Estilos Musicais</a>
+        <a id="artistas" class="a" href="KamusicArtistas.html">Artistas e músicas</a>
+    </div>
+    <div class="cab">
+        <div class="menu-block">
+            <div class="cab-titulo">
+                <h1>KaMusic</h1>
             </div>
-        </nav>
-        <hr>
+        </div>
+        <div class="logo">
+            <img src="IMG/WhiteLogo.png" width="280">
+        </div>
+        <div class="menu">
+            <a id="home" href="KamusicIndex.html">Home</a>
+            <a id="sobre" href="KamusicSobrenos.html">Sobre Nós</a>
+            <a id="estilos" href="KamusicGeneros.html">Estilos Musicais</a>
+            <a id="artistas" href="KamusicArtistas.html">Artistas e músicas</a>
+        </div>
+    </div>
+    <!-- Impede que o 'cab' "vá mais longe": </header> -->
     </header>
     <br>
     <main>
@@ -69,10 +60,10 @@
             curadoria exclusiva de produtos que celebram o universo musical. Do estudo acadêmico ao prazer de
             colecionar, o KaMusic é o ponto de encontro para quem não apenas escuta música, mas a vive intensamente.
             Seja bem-vindo ao nosso espaço, onde cada nota tem uma história para contar.
-        </p>
-        <div style="font-size: 125%">
+        </p>  
+        <!-- Vou tentar usar coiso de columns e border outside pra criar sombra-->
+        <div class="box-sobrenos">
             <h1>Marcos da Silva Gomes</h1>
-            <p style="text-align: justify;">
                 A história do KaMusic não estaria completa sem mencionar Marcos Gomes, um jovem desenvolvedor e
                 designer mineiro que cruzou o caminho de Kazuya Ninomiya de forma quase fátidica. Em 2022, enquanto
                 Kazuya ainda lutava para manter o site no ar entre seus turnos no supermercado, Marcos era um cliente

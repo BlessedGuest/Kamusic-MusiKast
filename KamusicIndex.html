@@ -6,35 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Exercicio 11 CSS</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styleEx10.css">
+    <link rel="stylesheet" type="text/css" href="CSS/KamusicMenu.css">
 </head>
 
 <body>
-    <header>
-        <div class="menu_top">
-            <div class="top_esp">
-                <figure>
-                    <img src="IMG/Logo.png" alt="logo" height="140px">
-                </figure>
+    <!--
+        Impede que o 'menu-abaixo' "vá mais longe": <header>
+        Acho que é melhor sem, mas é bom saber disso.
+    -->
+    <div class="menu-abaixo">
+        <a id="home" class="a" href="KamusicIndex.html">Home</a>
+        <a id="sobre" class="a" href="KamusicSobrenos.html">Sobre Nós</a>
+        <a class="h1" href="KamusicIndex.html">KaMusic</a>
+        <a id="estilos" class="a" href="KamusicGeneros.html">Estilos Musicais</a>
+        <a id="artistas" class="a" href="KamusicArtistas.html">Artistas e músicas</a>
+    </div>
+    <div class="cab">
+        <div class="menu-block">
+            <!--
+            
+            Botão de menu:
+
+            <div class="menu-button">
+                <a>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
             </div>
-            <div class="top_dir">
-                Kamusic
+            <p>MENU</p>
+            -->
+            <div class="cab-titulo">
+                <h1>KaMusic</h1>
             </div>
-            </div>
-            <div class="clear"></div>
-            <div class="menu_down">
-                <nav class="menu">
-                    <a href="KamusicIndex.html">Home</a>
-                    <a href="KamusicSobrenos.html">Sobre Nós</a>
-                    <a href="KamusicGeneros.html">Estilos Musicais</a>
-                    <a href="KamusicArtistas.html">Artistas e músicas</a>
-                </nav>
-            </div>
-    </header>
+        </div>
+        <div class="logo">
+            <img src="IMG/WhiteLogo.png" width="280">
+        </div>
+        <div class="menu">
+            <a id="home" href="KamusicIndex.html">Home</a>
+            <a id="sobre" href="KamusicSobrenos.html">Sobre Nós</a>
+            <a id="estilos" href="KamusicGeneros.html">Estilos Musicais</a>
+            <a id="artistas" href="KamusicArtistas.html">Artistas e músicas</a>
+        </div>
+    </div>
+    <!-- Impede que o 'cab' "vá mais longe": </header> -->
     <main>
         <div class="meio">
             <p>
-                
+
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti sit necessitatibus voluptates
                 consequuntur aliquam. Perferendis culpa eaque aliquid nulla excepturi, impedit, ipsa non voluptate,
                 fugit voluptatum eius? Minus, quod solutal
@@ -177,8 +197,8 @@
     <footer class="clear">
 
         <div class="roda">
- <p>&copy direitos reservados desde 2026. Kamusic</p>
-    </div>
+            <p>&copy direitos reservados desde 2026. Kamusic</p>
+        </div>
 
     </footer>
 </body>

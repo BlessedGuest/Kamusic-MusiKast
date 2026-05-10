@@ -100,7 +100,7 @@ body {
     border-bottom: 10px solid rgb(242, 255, 0);
 }
 
-.titulo-abaixo {
+.menu-abaixo {
     display:flex;
     justify-content: center;
     align-items:end;
@@ -114,7 +114,7 @@ body {
     box-shadow: 3px 3px 7px rgb(47, 47, 47, 0.7);
 }
 
-.titulo-abaixo .h1 {
+.menu-abaixo .h1 {
     text-decoration: none;
     user-select: none;
     color: white;
@@ -131,7 +131,7 @@ body {
     border-radius: 7px;
 }
 
-.titulo-abaixo .a{
+.menu-abaixo .a{
     margin-right:70px;
     margin-left:70px;
     padding-bottom: 6px;
@@ -145,47 +145,47 @@ body {
     flex:1;
 }
 
-.titulo-abaixo #home {
+.menu-abaixo #home {
     border-bottom: 5px solid rgba(101, 113, 246, 0.5);
     transition: 0.2s;
 }
 
-.titulo-abaixo #home:hover {
+.menu-abaixo #home:hover {
     margin-top: -6px;
     background-color: gray;
     border-bottom: 8px solid rgb(0, 21, 255);
 }
 
-.titulo-abaixo #sobre {
+.menu-abaixo #sobre {
     margin-left:-30px;
     border-bottom: 5px solid rgb(252, 128, 128);
     transition: 0.2s;
 }
 
-.titulo-abaixo #sobre:hover {
+.menu-abaixo #sobre:hover {
     margin-top: -6px;
     background-color: gray;
     border-bottom: 10px solid rgb(255, 0, 0);
 }
 
-.titulo-abaixo #estilos {
+.menu-abaixo #estilos {
     margin-right: -30px;
     border-bottom: 5px solid rgb(119, 252, 119);
     transition: 0.2s;
 }
 
-.titulo-abaixo #estilos:hover {
+.menu-abaixo #estilos:hover {
     margin-top: -7px;
     background-color: gray;
     border-bottom: 10px solid green;
 }
 
-.titulo-abaixo #artistas {
+.menu-abaixo #artistas {
     border-bottom: 5px solid rgba(255, 249, 129, 0.8);
     transition: 0.2s;
 }
 
-.titulo-abaixo #artistas:hover {
+.menu-abaixo #artistas:hover {
     margin-top: -7px;
     background-color: gray;
     border-bottom: 10px solid rgb(242, 255, 0);

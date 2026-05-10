@@ -168,12 +168,12 @@ body {
 /*Cores dos tópicos do 'mini' menu */
 
 .menu-abaixo #home {
-    border-bottom: rgba(101, 113, 246, 0.5); /* Borda inferior azul semitransparente */
+    border-bottom: rgb(252, 128, 128); /* Borda inferior azul semitransparente */
 }
 
 .menu-abaixo #sobre {
     margin-left: -30px; /* Puxa o link "Sobre" um pouco para a esquerda */
-    border-bottom: rgb(252, 128, 128); /* Borda inferior rosa/avermelhada */
+    border-bottom: rgba(101, 113, 246, 0.5); /* Borda inferior rosa/avermelhada */
 }
 
 .menu-abaixo #estilos {
@@ -188,11 +188,11 @@ body {
 /*Cores dos tópicos do 'mini' menu ao terem o mouse passado por cima*/
 
 .menu-abaixo #home:hover {
-    border-bottom: rgb(0, 21, 255); /* Linha de baixo vira azul forte quando passa o mouse */
+    border-bottom: rgb(255, 0, 0); /* Linha de baixo vira azul forte quando passa o mouse */
 }
 
 .menu-abaixo #sobre:hover {
-    border-bottom: rgb(255, 0, 0); /* Linha de baixo vira vermelha forte quando passa o mouse */
+    border-bottom: rgb(0, 21, 255); /* Linha de baixo vira vermelha forte quando passa o mouse */
 }
 
 .menu-abaixo #estilos:hover {

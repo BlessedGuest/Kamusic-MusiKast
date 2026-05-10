@@ -220,13 +220,7 @@ body {
     background-color: gray; /* Aplica um fundo cinza no link selecionado */
 }
 
-.box-sobrenos {
-    columns: 3;
-    border: 1px outside rgb(47, 47, 47);
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
+
 /* 
 
 Botão de menu:

@@ -3,48 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamusic - Rock</title>
-    <link rel="shortcut icon" size="16x16" href="IMG/Logo.png">
+    <title> Exercicio 11 CSS</title>
+    <link rel="stylesheet" type="text/css" href="CSS/KamusicMenu.css">
 </head>
 
 <body>
-    <header>
-        <section style="font-size: 30px;">
-            <figure style="text-align: right; margin-bottom: -150px">
-                <img src="IMG/Logo.png" width="20%">
-            </figure>
-            <h1 style="text-align: left; margin-left:30px;">KaMusic</h1>
-        </section>
-        <hr>
-        <nav>
-            <div style="text-align: center; font-size: 20px;">
-                <h3>
-                    <!-- Aqui dentro vai ficar os negocios dos outros sites -->
-                    <section>
-                        <a style="color: black;" href="KamusicIndex.html">
-                            <button>
-                                <p style="font-size:15px">Home</p>
-                            </button></a>
-                        <a style="color: black" href="KamusicSobrenos.html">
-                            <button>
-                                <p style="font-size:15px">Sobre Nós</p>
-                            </button></a>
-                        <a style="color: black" href="KamusicGeneros.html">
-                            <button>
-                                <p style="font-size:15px">Estilos Musicais</p>
-                            </button></a>
-                        <a style="color: black" href="KamusicArtistas.html">
-                            <button>
-                                <p style="font-size:15px">Artistas</p>
-                            </button></a> <!--final-->
-                    </section>
-                </h3>
+    <!--
+        Impede que o 'menu-abaixo' "vá mais longe": <header>
+        Acho que é melhor sem, mas é bom saber disso.
+    -->
+    <div class="menu-abaixo">
+        <a id="home" class="a" href="KamusicIndex.html">Home</a>
+        <a id="sobre" class="a" href="KamusicSobrenos.html">Sobre Nós</a>
+        <a class="h1" href="KamusicIndex.html">KaMusic</a>
+        <a id="estilos" class="a" href="KamusicGeneros.html">Estilos Musicais</a>
+        <a id="artistas" class="a" href="KamusicArtistas.html">Artistas e músicas</a>
+    </div>
+    <div class="cab">
+        <div class="menu-block">
+            <!--
+            
+            Botão de menu:
+
+            <div class="menu-button">
+                <a>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
             </div>
-        </nav>
-        <hr>
-    </header>
-    <br>
+            <p>MENU</p>
+            -->
+            <div class="cab-titulo">
+                <h1>KaMusic</h1>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="IMG/WhiteLogo.png" width="280">
+        </div>
+        <div class="menu">
+            <a id="home" href="KamusicIndex.html">Home</a>
+            <a id="sobre" href="KamusicSobrenos.html">Sobre Nós</a>
+            <a id="estilos" href="KamusicGeneros.html">Estilos Musicais</a>
+            <a id="artistas" href="KamusicArtistas.html">Artistas e músicas</a>
+        </div>
+    </div>
+    <!-- Impede que o 'cab' "vá mais longe": </header> -->
     <main>
         <section>
             <img src="IMG/BannerIronMaiden.png" width="100%">

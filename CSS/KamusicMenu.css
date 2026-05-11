@@ -333,10 +333,31 @@ body {
     /* Aplica um fundo cinza no link selecionado */
 }
 
+
+/*A PARTIR DAQUI É SÓ OS ASSUNTOS DO SITE+++*/
+
 main {
     flex: 1;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
+
 }
+
+.conteiner {
+    padding: 20px;
+    margin-top: 10px;
+    height: 250px;
+                display: flex;
+                gap: 5px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+}
+.item {
+    background-color: blueviolet;
+    flex-grow: 1;
+     width: 250px;
+    height: 250px;}
 
 footer {
     background-color: rgb(50, 50, 50);

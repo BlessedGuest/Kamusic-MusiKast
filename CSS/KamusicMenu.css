@@ -330,6 +330,18 @@ body {
     /* Aplica um fundo cinza no link selecionado */
 }
 
+footer {
+    margin-top: 100px;
+}
+
+.Menon {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    height: 250px;
+    background-color: rgb(50, 50, 50);
+}
 /* 
 
 Botão de menu:

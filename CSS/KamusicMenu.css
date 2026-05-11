@@ -3,6 +3,9 @@ body {
     /* Remove a margem padrão externa que vem no navegador */
     padding: 0;
     /* Remove o espaçamento interno padrão que vem no navegador */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Config geral do cabeçalho*/
@@ -330,19 +333,23 @@ body {
     /* Aplica um fundo cinza no link selecionado */
 }
 
+main {
+    flex: 1;
+    margin-bottom: 100px;
+}
+
 footer {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
     margin-top: 100px;
 }
 
-.Menon {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin: auto;
-    height: 250px;
-    background-color: rgb(80, 80, 80);
+footer hr {
+    margin: 0 auto 30px auto;
 }
+
 /* 
 
 Botão de menu:

@@ -373,12 +373,18 @@ footer {
     color: white;
     text-align: center;
     padding: 40px 20px;
-    
 }
 
 footer hr {
     margin: 0 auto 30px auto;
 }
+.meio p {
+    margin-bottom: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 100px;
+}
+.meio hr {margin-bottom: 30px;}
 /* 
 
 Botão de menu:

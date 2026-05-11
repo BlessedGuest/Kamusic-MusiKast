@@ -220,7 +220,19 @@ body {
     background-color: gray; /* Aplica um fundo cinza no link selecionado */
 }
 
+footer {
+    margin-top: 100px;
+}
 
+footer div {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    height: 250px;
+    background-color: rgb(80, 80, 80);
+}
 /* 
 
 Botão de menu:

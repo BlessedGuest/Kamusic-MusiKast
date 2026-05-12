@@ -369,7 +369,7 @@ main {
 }
 
 .item:hover {
-    margin-bottom: 15px;
+    transform: scale(1.05);
 }
 
 footer {
@@ -381,16 +381,6 @@ footer {
 
 footer hr {
     margin: 0 auto 30px auto;
-}
-.meio p {
-    margin-top: 10px;
-    margin-bottom: 200px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size: 100px;
-}
-.meio hr {
-    margin-bottom: 30px;
 }
 
 .estilo {

@@ -1,10 +1,19 @@
+body{
+    background-image: url(../IMG/Background1.png);
+    background-attachment: fixed;
+}
 
-
-/*A PARTIR DAQUI É SÓ OS ASSUNTOS DO SITE+++*/
-
-main {
+.main {
     flex: 1;
     margin-bottom: 10px;
+}
+
+.corpo{
+    background-color:white;
+    margin:20px;
+    padding:20px;
+    border-radius: 15px;
+    margin-top:50px;
 }
 
 .conteiner {
@@ -25,13 +34,13 @@ main {
     flex-grow: 1;
     width: 250px;
     height: 250px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .item img {
     width: 100%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .item:hover {
@@ -53,8 +62,10 @@ footer hr {
     background-color: rgb(0, 255, 208);
     width: 100px;
     height: 50px;
-    margin: 20px;
+    margin-top:30px;
+    margin-bottom:-50px;
     margin-right: 200px;
+    transition: 0.5s;
 }
 
 .titulo {
@@ -67,7 +78,7 @@ footer hr {
 }
 
 .estilo:hover {
-    transition: 0.5s;
+    cursor:pointer;
     width: 500px;
 }
 

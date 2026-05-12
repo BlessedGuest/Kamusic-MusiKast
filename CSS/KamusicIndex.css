@@ -1,17 +1,22 @@
-
-
-/*A PARTIR DAQUI É SÓ OS ASSUNTOS DO SITE+++*/
+body {
+    background-color: black;
+}
 
 main {
     flex: 1;
     margin-bottom: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 .conteiner {
     padding: 20px;
     margin-bottom: 50px;
     margin-top: 50px;
-    height: 250px;
+    height: 220px;
     display: flex;
     gap: 5px;
     flex-direction: row;
@@ -24,7 +29,7 @@ main {
     background-color: rgb(25, 25, 25);
     flex-grow: 1;
     width: 250px;
-    height: 250px;
+    height: 220px;
     border-radius: 25px;
 }
 

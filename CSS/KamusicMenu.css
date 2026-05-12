@@ -333,6 +333,17 @@ body {
     /* Aplica um fundo cinza no link selecionado */
 }
 
+footer {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer hr {
+    margin: 0 auto 30px auto;
+}
+
 /* 
 
 Botão de menu:

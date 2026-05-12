@@ -4,8 +4,6 @@ body {
     padding: 0;
     /* Remove o espaçamento interno padrão que vem no navegador */
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 /*Config geral do cabeçalho*/
@@ -342,6 +340,21 @@ footer {
 
 footer hr {
     margin: 0 auto 30px auto;
+}
+
+.main {
+    margin-top: 0px;
+    padding: 20px;
+    padding-top:0px;
+    text-align: center;
+}
+
+.corpo{
+    background-color:white;
+    margin:20px;
+    padding:20px;
+    border-radius: 15px;
+    margin-top:50px;
 }
 
 /* 

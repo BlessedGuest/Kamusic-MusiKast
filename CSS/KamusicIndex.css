@@ -1,24 +1,5 @@
 body{
     background-image: url(../IMG/Background1.png);
-    background-attachment: fixed;
-}
-
-.main {
-    flex: 1;
-    margin-bottom: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.corpo{
-    background-color:white;
-    margin:20px;
-    padding:20px;
-    border-radius: 15px;
-    margin-top:50px;
 }
 
 .conteiner {
@@ -43,7 +24,7 @@ body{
 }
 
 .item img {
-    width: 100%;
+    width: 95%;
     height: 100%;
     border-radius: 15px;
 }

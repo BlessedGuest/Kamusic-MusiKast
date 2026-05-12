@@ -368,6 +368,10 @@ main {
     border-radius: 25px;
 }
 
+.item:hover {
+    margin-bottom: 15px;
+}
+
 footer {
     background-color: rgb(50, 50, 50);
     color: white;
@@ -379,7 +383,8 @@ footer hr {
     margin: 0 auto 30px auto;
 }
 .meio p {
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 200px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 100px;
@@ -408,6 +413,12 @@ footer hr {
 .estilo:hover {
     transition: 0.5s;
     width: 500px;
+}
+
+.BannerY {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
 }
 /* 
 

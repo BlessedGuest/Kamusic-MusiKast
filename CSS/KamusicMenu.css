@@ -94,12 +94,12 @@ body {
 /*Cores dos tópicos do menu*/
 
 .menu #home {
-    border-bottom: rgb(252, 128, 128);
+    border-bottom: rgba(101, 113, 246, 0.5);
     /* Aplica uma cor rosa/avermelhada na borda de baixo */
 }
 
-.menu #sobre {
-    border-bottom: rgba(101, 113, 246, 0.5);
+.menu #artistas {
+    border-bottom: rgb(252, 128, 128);
     /* Aplica um azul com 50% de transparência na borda */
 }
 
@@ -108,7 +108,7 @@ body {
     /* Aplica uma cor verde clara na borda de baixo */
 }
 
-.menu #artistas {
+.menu #sobre {
     border-bottom: rgba(255, 249, 129, 0.8);
     /* Aplica um amarelo com 80% de opacidade na borda */
 }
@@ -116,12 +116,12 @@ body {
 /*Cores dos tópicos do menu ao terem o mouse passado por cima*/
 
 .menu #home:hover {
-    border-bottom: rgb(255, 0, 0);
+    border-bottom: rgb(0, 21, 255);
     /* Muda a borda para vermelho vivo quando o mouse encosta */
 }
 
-.menu #sobre:hover {
-    border-bottom: rgb(0, 21, 255);
+.menu #artistas:hover {
+    border-bottom: rgb(255, 0, 0);
     /* Muda a borda para azul vivo quando o mouse encosta */
 }
 
@@ -130,7 +130,7 @@ body {
     /* Muda a borda para verde escuro quando o mouse encosta */
 }
 
-.menu #artistas:hover {
+.menu #sobre:hover {
     border-bottom: rgb(242, 255, 0);
     /* Muda a borda para amarelo vivo quando o mouse encosta */
 }
@@ -138,9 +138,9 @@ body {
 /*Predefinições gerais dos tópicos do menu*/
 
 .menu #home,
-.menu #sobre,
+.menu #artistas,
 .menu #estilos,
-.menu #artistas {
+.menu #sobre {
     transition: 0.2s;
     /* Faz os efeitos de cor e tamanho mudarem de forma suave em 0.2 segundos */
     border-bottom-style: solid;
@@ -152,9 +152,9 @@ body {
 /*Predefinições gerais dos tópicos do menu ao terem o mouse passado por cima*/
 
 .menu #home:hover,
-.menu #sobre:hover,
+.menu #artistas:hover,
 .menu #estilos:hover,
-.menu #artistas:hover {
+.menu #sobre:hover {
     transition: 0.2s;
     /* Mantém a suavidade na animação de saída do mouse */
     margin-top: -7px;
@@ -256,14 +256,14 @@ body {
 /*Cores dos tópicos do 'mini' menu */
 
 .menu-abaixo #home {
-    border-bottom: rgb(252, 128, 128);
+    border-bottom: rgba(101, 113, 246, 0.5);
     /* Borda inferior azul semitransparente */
 }
 
-.menu-abaixo #sobre {
+.menu-abaixo #artistas {
     margin-left: -30px;
-    /* Puxa o link "Sobre" um pouco para a esquerda */
-    border-bottom: rgba(101, 113, 246, 0.5);
+    /* Puxa o link "artista" um pouco para a esquerda */
+    border-bottom: rgb(252, 128, 128);
     /* Borda inferior rosa/avermelhada */
 }
 
@@ -274,7 +274,7 @@ body {
     /* Borda inferior verde clara */
 }
 
-.menu-abaixo #artistas {
+.menu-abaixo #sobre {
     border-bottom: rgba(255, 249, 129, 0.8);
     /* Borda inferior amarela semitransparente */
 }
@@ -282,12 +282,12 @@ body {
 /*Cores dos tópicos do 'mini' menu ao terem o mouse passado por cima*/
 
 .menu-abaixo #home:hover {
-    border-bottom: rgb(255, 0, 0);
+    border-bottom: rgb(0, 21, 255);
     /* Linha de baixo vira azul forte quando passa o mouse */
 }
 
-.menu-abaixo #sobre:hover {
-    border-bottom: rgb(0, 21, 255);
+.menu-abaixo #artistas:hover {
+    border-bottom: rgb(255, 0, 0);
     /* Linha de baixo vira vermelha forte quando passa o mouse */
 }
 
@@ -296,7 +296,7 @@ body {
     /* Linha de baixo vira verde escura quando passa o mouse */
 }
 
-.menu-abaixo #artistas:hover {
+.menu-abaixo #sobre:hover {
     border-bottom: rgb(242, 255, 0);
     /* Linha de baixo vira amarela forte quando passa o mouse */
 }
@@ -304,9 +304,9 @@ body {
 /*Predefinições gerais dos tópicos do 'mini' menu */
 
 .menu-abaixo #home,
-.menu-abaixo #sobre,
+.menu-abaixo #artistas,
 .menu-abaixo #estilos,
-.menu-abaixo #artistas {
+.menu-abaixo #sobre {
     border-bottom-style: solid;
     /* Define que as linhas inferiores são contínuas */
     border-bottom-width: 5px;
@@ -318,9 +318,9 @@ body {
 /*Predefinições gerais dos tópicos do 'mini' menu ao terem o mouse passado por cima */
 
 .menu-abaixo #home:hover,
-.menu-abaixo #sobre:hover,
+.menu-abaixo #artistas:hover,
 .menu-abaixo #estilos:hover,
-.menu-abaixo #artistas:hover {
+.menu-abaixo #sobre:hover {
     border-bottom-style: solid;
     /* Garante que a linha continue contínua */
     border-bottom-width: 10px;

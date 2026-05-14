@@ -2,21 +2,13 @@ body{
     background-image: url(../IMG/Background3.png);
 }
 
-.box-cont {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 4px 4px 20px rgb(63, 63, 63);
-    margin-bottom: 60px;
-}
-
-img {
-    max-width: 100%;
+.texto img {
+    width: 95%;
     border-radius: 10px;
     transition: 0.3s;
 }
 
-img:hover {
+.texto img:hover {
     transform: scale(1.05);
 }
 
@@ -46,8 +38,20 @@ h3 {
 
 b {
     font-family: 'Oswald', sans-serif;
-    ;
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 0px;
+}
+
+.BannerMus {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    border-radius:10px;
+}
+
+.BannerMus:hover {
+    transform: scale(1.01);
+    cursor:pointer;
 }

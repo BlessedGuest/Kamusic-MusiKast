@@ -2,14 +2,23 @@ body{
     background-image: url(../IMG/Background3.png);
 }
 
-.texto img {
-    width: 95%;
-    border-radius: 10px;
-    transition: 0.3s;
+.texto img{
+    border-radius:10px;
+    transition: 0.2s;
 }
 
 .texto img:hover {
+    transform: scale(1.01);
+}
+
+.img-box img{
+    width: 290px;
+}
+
+.img-box img:hover {
     transform: scale(1.05);
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .h1 {

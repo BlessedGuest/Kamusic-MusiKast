@@ -12,7 +12,8 @@ body{
 }
 
 .img-box img{
-    width: 290px;
+    display:inline;
+    width:15%;
 }
 
 .img-box img:hover {
@@ -50,17 +51,4 @@ b {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 0px;
-}
-
-.BannerMus {
-    margin-top: 20px;
-    width: 100%;
-    height: 100%;
-    transition: 0.2s;
-    border-radius:10px;
-}
-
-.BannerMus:hover {
-    transform: scale(1.01);
-    cursor:pointer;
 }

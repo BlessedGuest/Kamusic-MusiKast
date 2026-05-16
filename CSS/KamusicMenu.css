@@ -17,6 +17,7 @@ body {
     /* Faz o cabeçalho ficar visualmente acima do menu-abaixo na tela */
     padding-top: 130px;
     /* Cria um espaço em branco interno na parte de cima */
+    border-bottom: 3px solid rgb(47, 47, 47);
 }
 
 /*Config da logo no cabeçalho*/
@@ -350,11 +351,35 @@ footer hr {
 }
 
 .corpo{
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.974);
     margin:20px;
     padding:20px;
+    padding-top:0px;
     border-radius: 15px;
     margin-top:50px;
+}
+
+.BannerPrincipal {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    border-radius:10px;
+}
+
+.BannerPrincipal:hover {
+    cursor:pointer;
+    transform: scale(1.01);
+}
+
+.Banner{
+    width:95%;
+    border-radius:10px;
+    transition:0.2s;
+}
+
+.Banner:hover{
+    transform: scale(1.02);
 }
 
 /* 

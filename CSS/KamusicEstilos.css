@@ -1,0 +1,54 @@
+body{
+    background-image: url(../IMG/Background3.png);
+}
+
+.texto img{
+    border-radius:10px;
+    transition: 0.2s;
+}
+
+.texto img:hover {
+    transform: scale(1.01);
+}
+
+.img-box img{
+    display:inline;
+    width:15%;
+}
+
+.img-box img:hover {
+    transform: scale(1.05);
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+b {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}

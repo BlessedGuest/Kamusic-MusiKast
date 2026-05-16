@@ -15,7 +15,7 @@ body {
     /* Ativa o modo de posicionamento manual para este bloco */
     z-index: 2;
     /* Faz o cabeçalho ficar visualmente acima do menu-abaixo na tela */
-    padding-top: 130px;
+    padding-top: 105px;
     /* Cria um espaço em branco interno na parte de cima */
     border-bottom: 3px solid rgb(47, 47, 47);
 }
@@ -50,7 +50,7 @@ body {
     /* Define as fontes do texto */
     user-select: none;
     /* Impede que o usuário consiga selecionar o texto com o mouse */
-    margin-left: 100px;
+    margin-left: 75px;
     /* Empurra o texto 100 pixels para a direita */
     margin-top: 40px;
     /* Sobrescreve a margem anterior e empurra o texto para baixo */
@@ -61,7 +61,7 @@ body {
 .menu {
     display: flex;
     /* Ativa o alinhamento flexível, colocando os links lado a lado */
-    margin-top: -60px;
+    margin-top: -80px;
     /* Puxa todo o menu de links para cima */
 }
 
@@ -345,7 +345,7 @@ footer hr {
 
 .main {
     margin-top: 0px;
-    padding: 20px;
+    padding: 70px;
     padding-top:0px;
     text-align: center;
 }
@@ -353,7 +353,7 @@ footer hr {
 .corpo{
     background-color:rgba(255, 255, 255, 0.974);
     margin:20px;
-    padding:20px;
+    padding:40px;
     padding-top:0px;
     border-radius: 15px;
     margin-top:50px;

@@ -20,6 +20,16 @@ body{
     align-items: center;
 }
 
+.exemplo{
+    background-color: rgb(25, 25, 25);
+    flex-grow: 1;
+    height: inherit;
+    border-radius: 25px;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
 .item {
     background-color: rgb(25, 25, 25);
     flex-grow: 1;

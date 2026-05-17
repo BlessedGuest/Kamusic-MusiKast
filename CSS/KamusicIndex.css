@@ -59,6 +59,7 @@ body{
 
     opacity: 0;
     transition: 0.3s;
+    cursor: pointer;
 }
 .item:hover .overlay{opacity: 1; }
 
@@ -68,6 +69,15 @@ body{
     left: 10px;
     font-size: 40px;
     align-self: center;
+    white-space: nowrap;
+}
+.titulo-card {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 18px;
+    color: white;
     white-space: nowrap;
 }
 

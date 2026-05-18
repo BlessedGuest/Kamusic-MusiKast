@@ -246,6 +246,7 @@ a{
 .album-tit{
     margin-left:20px;
     font-size:20px;
+    text-align: justify;
 }
 
 .box-titulos{

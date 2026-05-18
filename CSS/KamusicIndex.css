@@ -157,7 +157,6 @@ a{
 
 .box-rec {
     padding-left: 10px;
-    margin-top: 70px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -182,6 +181,7 @@ a{
 .musica{
     display:flex;
     margin:20px;
+    margin-top:0;
     padding:5px;
     align-items: center;
     transition:0.2s;
@@ -211,7 +211,7 @@ a{
     font-size:40px;
 }
 
-.box-lado {
+.box-dir {
     display: flex;
     flex-direction: column;
     margin-right:10px;
@@ -244,4 +244,22 @@ a{
 .album-tit{
     margin-left:20px;
     font-size:20px;
+}
+
+.box-titulos{
+    margin-top:80px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size:30px;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tit-box-esq{
+    font-size:40px;
+}
+
+.tit-box-dir{
+    justify-self: start;
+    margin-left:50px;
 }

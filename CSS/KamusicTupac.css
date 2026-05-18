@@ -1,9 +1,4 @@
-body {
-    background-color: black;
-}
-
-
-main {
+.main {
 
     margin: 20px;
     border-radius: 10px;
@@ -11,37 +6,17 @@ main {
     padding: 20px;
     text-align: center;
 }
+body{
+    background-image: url(../IMG/Background3.png);
+}
 
-img {
-    max-width: 100%;
-    border-radius: 10px;
-    transition: 0.3s;
+img{
+    border-radius:10px;
+    transition: 0.2s;
 }
 
 img:hover {
-    transform: scale(1.05);
-}
-
-body {
-    background-color: black;
-}
-
-main {
-    margin: 20px;
-    border-radius: 10px;
-    background-color: white;
-    padding: 30px;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-img:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .h1 {

@@ -204,3 +204,7 @@ main p {
     cursor: pointer;
     width: 500px;
 }
+
+.btitulo {
+    font-size: 40px;
+}

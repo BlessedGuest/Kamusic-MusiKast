@@ -1,210 +1,431 @@
 body {
+
+    /* Coloca uma imagem como fundo da página inteira */
     background-image: url(../IMG/Background3.png);
 }
 
 img {
+
+    /* Arredonda os cantos da imagem */
     border-radius: 10px;
+
+    /* Faz qualquer mudança acontecer suavemente em 0.2 segundos */
     transition: 0.2s;
 }
 
 img:hover {
+
+    /* Aumenta levemente a imagem quando o mouse passa em cima */
     transform: scale(1.01);
 }
 
 .img-box {
+
+    /* Centraliza tudo que estiver dentro dessa div */
     text-align: center;
+
+    /* Cria um espaço de 50px abaixo da div */
     margin-bottom: 50px;
 }
 
 .img-box img {
+
+    /* Faz as imagens ficarem uma do lado da outra */
     display: inline;
+
+    /* Define que a imagem ocupará 15% da largura disponível */
     width: 15%;
 }
 
 .img-box img:hover {
+
+    /* Aumenta mais a imagem quando passar o mouse */
     transform: scale(1.05);
+
+    /* Empurra a imagem um pouco para longe da esquerda */
     margin-left: 10px;
+
+    /* Empurra a imagem um pouco para longe da direita */
     margin-right: 10px;
 }
 
 .h1 {
+
+    /* Define a fonte usada */
     font-family: 'Bebas Neue', sans-serif;
+
+    /* Define o tamanho da letra */
     font-size: 50px;
+
+    /* Adiciona espaço entre as letras */
     letter-spacing: 1px;
+
+    /* Deixa todas as letras maiúsculas */
     text-transform: uppercase;
+
+    /* Define a cor do texto */
     color: rgb(0, 0, 0);
 }
 
 h2 {
+
+    /* Define a fonte */
     font-family: 'Oswald', sans-serif;
+
+    /* Define o tamanho do texto */
     font-size: 42px;
+
+    /* Define a grossura da letra */
     font-weight: 600;
+
+    /* Adiciona espaço entre as letras */
     letter-spacing: 1px;
+
+    /* Adiciona espaço abaixo do h2 */
     margin-bottom: 20px;
 }
 
 h3 {
+
+    /* Fonte padrão do sistema */
     font-family: Arial, Helvetica, sans-serif;
+
+    /* Tamanho do texto */
     font-size: 30px;
+
+    /* Define o peso da fonte */
     font-weight: 600;
+
+    /* Espaço entre letras */
     letter-spacing: 1px;
+
+    /* Espaço abaixo do elemento */
     margin-bottom: 20px;
 }
 
 b {
+
+    /* Fonte personalizada */
     font-family: 'Oswald', sans-serif;
+
+    /* Tamanho do texto */
     font-size: 15px;
+
+    /* Deixa o texto em negrito */
     font-weight: bold;
+
+    /* Remove espaço abaixo */
     margin-bottom: 0px;
 }
 
 main p {
+
+    /* Define o tamanho dos parágrafos */
     font-size: 18px;
+
+    /* Faz o texto ocupar igualmente os lados */
     text-align: justify;
 }
 
 .Banner {
+
+    /* Troca o cursor para a "mãozinha" */
     cursor: pointer;
 }
 
 /* Esconde checkbox */
 .gatilho {
+
+    /* Remove o checkbox da tela */
     display: none;
 }
 
-/* Caixa fechada */
 .caixa-texto {
+
+    /* Define altura máxima como 0, deixando fechado */
     max-height: 0;
+
+    /* Deixa invisível */
     opacity: 0;
+
+    /* Esconde qualquer conteúdo que ultrapasse */
     overflow: hidden;
 
+    /*
+       Cria animações suaves:
+       max-height = anima abertura
+       opacity = anima transparência
+       padding = anima espaçamento interno
+    */
     transition:
         max-height 0.4s ease,
         opacity 0.3s ease,
         padding 0.4s ease;
 
+    /* Adiciona espaço interno apenas nas laterais */
     padding: 0 15px;
+
+    /*
+       Faz o padding ser incluído no tamanho total
+       do elemento
+    */
     box-sizing: border-box;
 }
 
 /* Quando clicar */
 .gatilho:checked~.caixa-texto {
+
+    /* Expande a altura máxima */
     max-height: 1500px;
+
+    /* Torna o elemento visível */
     opacity: 1;
+
+    /* Adiciona espaçamento interno completo */
     padding: 15px;
 }
 
 .conteiner-geral {
+
+    /* Adiciona espaço acima */
     margin-top: 50px;
 }
 
 .conteiner {
+
+    /* Espaço interno em todos os lados */
     padding: 20px;
+
+    /* Espaço interno apenas na esquerda */
     padding-left: 10px;
+
+    /* Espaço abaixo */
     margin-bottom: 50px;
+
+    /* Espaço acima */
     margin-top: 50px;
+
+    /* Altura fixa do container */
     height: 220px;
+
+    /* Ativa o Flexbox */
     display: flex;
+
+    /* Espaço entre os itens */
     gap: 5px;
+
+    /* Organiza os itens em linha */
     flex-direction: row;
+
+    /* Impede quebra de linha */
     flex-wrap: nowrap;
+
+    /* Distribui os itens horizontalmente */
     justify-content: space-between;
+
+    /* Centraliza verticalmente */
     align-items: center;
 }
 
 .item {
+
+    /* Cor de fundo escura */
     background-color: rgb(25, 25, 25);
+
+    /* Faz o item crescer ocupando espaço */
     flex-grow: 1;
+
+    /* Faz o item herdar a altura do pai */
     height: inherit;
+
+    /* Arredonda as bordas */
     border-radius: 25px;
+
+    /* Faz as animações serem suaves */
     transition: 0.2s;
+
+    /*
+       Permite posicionar elementos absolutos
+       dentro dele
+    */
     position: relative;
+
+    /* Esconde conteúdo que sair da caixa */
     overflow: hidden;
 }
 
 .item img {
+
+    /* Faz a imagem ocupar toda largura */
     width: 100%;
+
+    /* Faz a imagem ocupar toda altura */
     height: 100%;
+
+    /* Arredonda os cantos */
     border-radius: 15px;
 }
 
 .item:hover {
+
+    /* Aumenta o tamanho do card */
     transform: scale(1.05);
+
+    /* Mantém o cursor normal */
     cursor: default;
 }
 
 .overlay {
+
+    /*
+       Faz a camada ficar posicionada
+       em relação ao .item
+    */
     position: absolute;
+
+    /* Cola no topo */
     top: 0;
+
+    /* Cola na esquerda */
     left: 0;
 
+    /* Ocupa toda largura */
     width: 100%;
+
+    /* Ocupa toda altura */
     height: 100%;
 
+    /* Fundo preto transparente */
     background: rgba(0, 0, 0, 0.4);
 
+    /* Ativa flexbox */
     display: flex;
+
+    /* Centraliza horizontalmente */
     justify-content: center;
+
+    /* Centraliza verticalmente */
     align-items: center;
 
+    /* Tamanho do texto */
     font-size: 40px;
+
+    /* Cor branca */
     color: white;
 
+    /* Começa invisível */
     opacity: 0;
+
+    /* Anima a transparência */
     transition: 0.3s;
+
+    /* Cursor vira mãozinha */
     cursor: pointer;
 }
 
 .item:hover .overlay {
+
+    /* Faz a camada aparecer */
     opacity: 1;
 }
 
 .titulo {
+
+    /* Fonte grossa e chamativa */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /* Permite mover usando left */
     position: relative;
+
+    /* Move 10px para a direita */
     left: 10px;
+
+    /* Tamanho da fonte */
     font-size: 40px;
+
+    /* Centraliza dentro do flexbox */
     align-self: center;
+
+    /* Impede quebra de linha */
     white-space: nowrap;
 }
 
 .titulo-card {
+
+    /* Fonte do título */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /* Posicionamento livre */
     position: absolute;
+
+    /* Distância da esquerda */
     left: 10px;
+
+    /* Distância de baixo */
     bottom: 10px;
+
+    /* Tamanho da letra */
     font-size: 18px;
+
+    /* Cor branca */
     color: white;
+
+    /* Impede quebra de linha */
     white-space: nowrap;
 }
 
 .estilo,
 .estilo2 {
+
+    /* Largura inicial */
     width: 100px;
+
+    /* Altura */
     height: 50px;
+
+    /* Espaço acima */
     margin-top: 30px;
+
+    /* Espaço à esquerda */
     margin-left: 10px;
+
+    /*
+       Valor negativo puxa o elemento
+       para cima
+    */
     margin-bottom: -50px;
+
+    /* Espaço à direita */
     margin-right: 200px;
+
+    /* Anima mudanças suavemente */
     transition: 0.5s;
 }
 
-/*Predefinições específicas de cada estilos*/
-
 .estilo {
+
+    /* Cor azul esverdeada */
     background-color: rgb(0, 255, 208);
 }
 
 .estilo2 {
+
+    /* Cor vermelha */
     background-color: rgb(255, 72, 72);
 }
+
 .estilo:hover,
-.estilo2:hover
-{
+.estilo2:hover {
+
+    /* Cursor vira mãozinha */
     cursor: pointer;
+
+    /* Aumenta muito a largura */
     width: 500px;
 }
 
 .btitulo {
+
+    /* Tamanho do texto */
     font-size: 40px;
 }

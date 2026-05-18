@@ -11,6 +11,7 @@ img:hover {
     transform: scale(1.01);
 }
 .img-box {
+    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -54,4 +55,35 @@ b {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 0px;
+}
+main p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Esconde checkbox */
+.gatilho {
+    display: none;
+}
+
+/* Caixa fechada */
+.caixa-texto {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.4s ease;
+
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Quando clicar */
+.gatilho:checked ~ .caixa-texto {
+    max-height: 1500px;
+    opacity: 1;
+    padding: 15px;
 }

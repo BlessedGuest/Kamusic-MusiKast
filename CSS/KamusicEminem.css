@@ -1,28 +1,7 @@
-body {
-    background-color: black;
+body{
+    background-image: url(../IMG/Background2.png);
 }
 
-
-main {
-
-    margin: 20px;
-    border-radius: 10px;
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-img:hover {
-    transform: scale(1.05);
-}
-
-/* add do codigo do tupac! */
 .titulos{
     margin-top:40px;
     margin-bottom:10px;
@@ -52,7 +31,7 @@ img:hover {
     display:flex;
     flex-direction: column;
     align-items: center;
-    align-self: start;
+    justify-items:start;
     gap:5px;
 }
 
@@ -68,7 +47,7 @@ img:hover {
 }
 
 .mus-esp:hover{
-    background-color: rgba(47, 47, 47, 0.2);
+    background-color: rgba(144, 142, 142, 0.2);
 }
 
 .mus-info-box{
@@ -78,8 +57,10 @@ img:hover {
 }
 
 .numero-musica{
+    text-align: center;
     font-size: 40px;
-    align-self: center;
+    align-self:center;
+    min-width: 60px;
     font-weight: bold;
     border-radius:100px;
     color:rgb(170, 169, 169);
@@ -87,13 +68,13 @@ img:hover {
 
 .nome-musica{
     font-size: 20px;
-    min-width:200px;
+    min-width:190px;
+    max-width:200px;
 }
 
 .album-musica{
-    font-style: italic;
     color:gray;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .album-box img{
@@ -101,35 +82,33 @@ img:hover {
     border-radius: 90px;
 }
 
-.album-box{ 
-    display:grid;
+.album-box{
+    display:flex;
+    flex-direction: column;
     gap:10px;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-self: center;
 }
 
 .album-esp{
     display:flex;
-    flex-wrap: wrap;
-}
-
-.album-esp2{
-    display:flex;
-    flex-direction: column;
-    align-self: center;
-    gap:10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .album{
     text-align: justify;
     gap:10px;
+    flex:1;
     display:flex;
     align-items: center;
+    justify-self: center;
     padding:5px;
     margin:2px;
     transition:0.2s;
     cursor:pointer;
     border-radius: 100px;
-    width:300px;
 }
 
 .album:hover{
@@ -145,10 +124,41 @@ img:hover {
 .texto-album h1{
     font-size:20px;
     gap:-100px;
+    max-width:170px;
     margin-bottom:-10px;
 }
 
 .texto-album p{
     font-size:15px;
-    color:gray;
+    max-width:200px;
+    color:rgb(0, 0, 0);;
+}
+.artista-info{
+    max-width: 850px;
+    margin: auto;
+    padding: 50px 20px;
+    color: #000000;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
+
+.artista-info h2{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #000000;
+    border-left: 5px solid #888;
+    padding-left: 15px;
+}
+
+.artista-info h3{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.artista-info p{
+    margin-bottom: 18px;
+    font-size: 1.05rem;
 }

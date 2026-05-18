@@ -61,6 +61,9 @@ main p {
     text-align: justify;
 }
 
+.Banner{
+    cursor:pointer;
+}
 /* Esconde checkbox */
 .gatilho {
     display: none;

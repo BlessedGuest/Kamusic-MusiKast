@@ -1,29 +1,30 @@
-body{
+body {
     background-image: url(../IMG/Background3.png);
 }
 
-img{
-    border-radius:10px;
+img {
+    border-radius: 10px;
     transition: 0.2s;
 }
 
 img:hover {
     transform: scale(1.01);
 }
+
 .img-box {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.img-box img{
-    display:inline;
-    width:15%;
+.img-box img {
+    display: inline;
+    width: 15%;
 }
 
 .img-box img:hover {
     transform: scale(1.05);
-    margin-left:10px;
-    margin-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .h1 {
@@ -56,14 +57,16 @@ b {
     font-weight: bold;
     margin-bottom: 0px;
 }
+
 main p {
     font-size: 18px;
     text-align: justify;
 }
 
-.Banner{
-    cursor:pointer;
+.Banner {
+    cursor: pointer;
 }
+
 /* Esconde checkbox */
 .gatilho {
     display: none;
@@ -85,8 +88,119 @@ main p {
 }
 
 /* Quando clicar */
-.gatilho:checked ~ .caixa-texto {
+.gatilho:checked~.caixa-texto {
     max-height: 1500px;
     opacity: 1;
     padding: 15px;
+}
+
+.conteiner-geral {
+    margin-top: 50px;
+}
+
+.conteiner {
+    padding: 20px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 220px;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    background-color: rgb(25, 25, 25);
+    flex-grow: 1;
+    height: inherit;
+    border-radius: 25px;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    color: white;
+
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    left: 10px;
+    font-size: 40px;
+    align-self: center;
+    white-space: nowrap;
+}
+
+.titulo-card {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 18px;
+    color: white;
+    white-space: nowrap;
+}
+
+.estilo,
+.estilo2 {
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: -50px;
+    margin-right: 200px;
+    transition: 0.5s;
+}
+
+/*Predefinições específicas de cada estilos*/
+
+.estilo {
+    background-color: rgb(0, 255, 208);
+}
+
+.estilo2 {
+    background-color: rgb(255, 72, 72);
+}
+.estilo:hover,
+.estilo2:hover
+{
+    cursor: pointer;
+    width: 500px;
 }

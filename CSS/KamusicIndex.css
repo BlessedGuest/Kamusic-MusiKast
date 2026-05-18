@@ -13,6 +13,30 @@ a {
     color: black;
 }
 
+.titulo-card {
+
+    /* Fonte do título */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /* Posicionamento livre */
+    position: absolute;
+
+    /* Distância da esquerda */
+    left: 10px;
+
+    /* Distância da parte inferior */
+    bottom: 10px;
+
+    /* Tamanho da letra */
+    font-size: 18px;
+
+    /* Cor branca */
+    color: white;
+
+    /* Impede quebra de linha */
+    white-space: nowrap;
+}
+
 .conteiner-geral {
 
     /* Adiciona espaço acima do container */
@@ -202,30 +226,6 @@ a {
     white-space: nowrap;
 }
 
-.titulo-card {
-
-    /* Fonte do título */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-    /* Posicionamento livre */
-    position: absolute;
-
-    /* Distância da esquerda */
-    left: 10px;
-
-    /* Distância da parte inferior */
-    bottom: 10px;
-
-    /* Tamanho da letra */
-    font-size: 18px;
-
-    /* Cor branca */
-    color: white;
-
-    /* Impede quebra de linha */
-    white-space: nowrap;
-}
-
 /* Predefinições gerais dos estilos */
 
 .estilo,
@@ -396,12 +396,6 @@ a {
     cursor: pointer;
 }
 
-.top {
-
-    /* Espaço à esquerda */
-    margin-left: 20px;
-}
-
 .mus-titulo {
 
     /* Tamanho da fonte */
@@ -427,6 +421,8 @@ a {
 
     /* Tamanho do número */
     font-size: 40px;
+    margin-right:20px;
+    margin-left:20px;
 }
 
 .box-dir {
@@ -518,6 +514,8 @@ a {
     /* Centraliza verticalmente */
     align-items: center;
 
+    justify-items: center;
+
     /* Fonte dos títulos */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -526,13 +524,6 @@ a {
 
     /* Tamanho maior */
     font-size: 40px;
-}
-
-.tit-box-dir {
-
-    /* Alinha no começo da célula */
     justify-self: start;
-
-    /* Espaço à esquerda */
-    margin-left: 50px;
+    margin-left:10px;
 }

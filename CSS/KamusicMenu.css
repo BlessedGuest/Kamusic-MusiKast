@@ -358,8 +358,8 @@ footer b { font-size: 40px;}
 
 
 .main {
+    margin:40px;
     margin-top: 0px;
-    padding: 70px;
     padding-top: 0px;
     text-align: center;
 }

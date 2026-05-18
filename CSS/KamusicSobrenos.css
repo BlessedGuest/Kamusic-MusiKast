@@ -1,16 +1,17 @@
 /*
 Caue:
  */
- body{
+body {
   background-image: url(../IMG/Background4.png);
- }
+}
+
 .box-sobrenos {
   columns: 2;
   margin-top: 500px;
   margin: 20xp;
   border: 2px outside rgb(47, 47, 47);
   margin: auto;
-  margin-top: 40px;
+  margin-top: 50px;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -21,7 +22,53 @@ Caue:
   text-align: center;
   box-sizing: border-box;
   box-shadow: 20px;
+  transition: 0.2s;
 }
+
+.box-sobrenos p {
+  text-indent: 2em;
+}
+
+.corpo {
+  padding-top: 1px;
+}
+
+.Marcos, .Emily, .Kazuya{
+  border-radius: 10px;
+}
+
+.Kazuya {
+  width: 50%;
+}
+
+.Marcos, .Emily {
+  width: 100%;
+}
+
+/*
+.box-sobrenos1 p, .box-sobrenos2 p, .box-sobrenos3 p {
+  text-indent: 2em;
+}
+
+.box-sobrenos1:hover, .box-sobrenos2:hover, .box-sobrenos3:hover{
+  cursor:pointer;
+}
+
+.box-sobrenos1:hover{
+  background-color: rgb(162, 193, 255);
+  box-shadow: 5px 5px 10px rgba(1, 30, 87, 0.5);
+}
+
+.box-sobrenos2:hover{
+  background-color: rgb(255, 162, 162);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box-sobrenos3:hover{
+  background-color: rgb(196, 255, 162);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+*/
 
 /*
 Matteo:

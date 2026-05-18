@@ -340,7 +340,7 @@ footer {
 }
 
 footer hr {
-    margin: 0 auto 30px auto;
+  margin-top: auto;
 }
 
 .main {
@@ -356,7 +356,7 @@ footer hr {
     padding:40px;
     padding-top:0px;
     border-radius: 15px;
-    margin-top:50px;
+    margin-top:30px;
 }
 
 .BannerPrincipal {

@@ -1,14 +1,19 @@
-body{
+body {
     background-image: url(../IMG/Background1.png);
 }
 
-.conteiner-geral{
-    margin-top:50px;
+a{
+    text-decoration: none;
+    color:black;
 }
 
-.conteiner, .conteiner3 {
+.conteiner-geral {
+    margin-top: 50px;
+}
+
+.conteiner {
     padding: 20px;
-    padding-left:10px;
+    padding-left: 10px;
     margin-bottom: 50px;
     margin-top: 50px;
     height: 220px;
@@ -20,7 +25,7 @@ body{
     align-items: center;
 }
 
-.exemplo{
+.exemplo {
     background-color: rgb(25, 25, 25);
     flex-grow: 1;
     height: inherit;
@@ -50,6 +55,7 @@ body{
     transform: scale(1.05);
     cursor: default;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -58,7 +64,7 @@ body{
     width: 100%;
     height: 100%;
 
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
 
     display: flex;
     justify-content: center;
@@ -71,7 +77,10 @@ body{
     transition: 0.3s;
     cursor: pointer;
 }
-.item:hover .overlay{opacity: 1; }
+
+.item:hover .overlay {
+    opacity: 1;
+}
 
 .titulo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -81,6 +90,7 @@ body{
     align-self: center;
     white-space: nowrap;
 }
+
 .titulo-card {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
@@ -93,12 +103,15 @@ body{
 
 /*Predefinições gerais de todos os estilos*/
 
-.estilo, .estilo2, .estilo3, .estilo4{
+.estilo,
+.estilo2,
+.estilo3,
+.estilo4 {
     width: 100px;
     height: 50px;
-    margin-top:30px;
-    margin-left:10px;
-    margin-bottom:-50px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: -50px;
     margin-right: 200px;
     transition: 0.5s;
 }
@@ -124,17 +137,111 @@ body{
 
 /*:hover de todos os estilos*/
 
-.estilo:hover, .estilo2:hover, .estilo3:hover, .estilo4:hover{
-    cursor:pointer;
+.estilo:hover,
+.estilo2:hover,
+.estilo3:hover,
+.estilo4:hover {
+    cursor: pointer;
     width: 500px;
 }
 
 /*Ajustes nos tamanhos devido à variações nos tamanhos dos textos*/
 
-.estilo3:hover{
+.estilo3:hover {
     width: 300px;
 }
 
-.estilo4:hover{
+.estilo4:hover {
     width: 700px;
+}
+
+.box-rec {
+    padding-left: 10px;
+    margin-top: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagem img {
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.box-eminem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box-centro{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.musica{
+    display:flex;
+    margin:20px;
+    padding:5px;
+    align-items: center;
+    transition:0.2s;
+    border-radius:10px;
+}
+
+.musica:hover{
+    background-color: rgba(80, 80, 80, 0.374);
+    cursor:pointer;
+}
+
+.top{
+    margin-left:20px;
+}
+
+.mus-titulo{
+    font-size:30px;
+    text-align: justify;
+}
+
+.mus-album{
+    font-size:20px;
+    text-align: justify;
+}
+
+.numero{
+    font-size:40px;
+}
+
+.box-lado {
+    display: flex;
+    flex-direction: column;
+    margin-right:10px;
+}
+
+.album {
+    display: flex;
+    align-items: center;
+    padding:10px;
+    transition: 0.2s;
+    border-radius: 20px;
+    margin:5px;
+}
+
+.album:hover {
+    cursor:pointer;
+    background-color: rgba(80, 80, 80, 0.374);
+}
+
+.numero2 {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.album img {
+    width: 80px;
+    border-radius: 10px;
+}
+
+.album-tit{
+    margin-left:20px;
+    font-size:20px;
 }

@@ -1,268 +1,538 @@
 body {
+
+    /* Define uma imagem como fundo da página */
     background-image: url(../IMG/Background1.png);
 }
 
-a{
+a {
+
+    /* Remove o sublinhado padrão dos links */
     text-decoration: none;
-    color:black;
+
+    /* Define a cor preta para os links */
+    color: black;
 }
 
 .conteiner-geral {
+
+    /* Adiciona espaço acima do container */
     margin-top: 50px;
 }
 
 .conteiner {
+
+    /* Espaçamento interno em todos os lados */
     padding: 20px;
+
+    /* Espaçamento interno apenas na esquerda */
     padding-left: 10px;
+
+    /* Espaço abaixo */
     margin-bottom: 50px;
+
+    /* Espaço acima */
     margin-top: 50px;
+
+    /* Altura fixa */
     height: 220px;
+
+    /* Ativa o Flexbox */
     display: flex;
+
+    /* Espaço entre os elementos */
     gap: 5px;
+
+    /* Organiza os itens em linha */
     flex-direction: row;
+
+    /* Impede quebra de linha */
     flex-wrap: nowrap;
+
+    /* Distribui os itens horizontalmente */
     justify-content: space-between;
+
+    /* Centraliza os itens verticalmente */
     align-items: center;
 }
 
 .exemplo {
+
+    /* Cor de fundo escura */
     background-color: rgb(25, 25, 25);
+
+    /* Faz o elemento crescer ocupando espaço disponível */
     flex-grow: 1;
+
+    /* Herda a altura do container pai */
     height: inherit;
+
+    /* Arredonda as bordas */
     border-radius: 25px;
+
+    /* Cria animações suaves */
     transition: 0.2s;
+
+    /*
+       Permite posicionar elementos absolutos
+       dentro dele
+    */
     position: relative;
+
+    /* Esconde partes que ultrapassarem */
     overflow: hidden;
 }
 
 .item {
+
+    /* Cor de fundo */
     background-color: rgb(25, 25, 25);
+
+    /* Faz o item crescer */
     flex-grow: 1;
+
+    /* Herda altura do pai */
     height: inherit;
+
+    /* Bordas arredondadas */
     border-radius: 25px;
+
+    /* Transições suaves */
     transition: 0.2s;
+
+    /* Necessário para usar absolute dentro */
     position: relative;
+
+    /* Esconde conteúdo excedente */
     overflow: hidden;
 }
 
 .item img {
+
+    /* Faz a imagem ocupar toda largura */
     width: 100%;
+
+    /* Faz a imagem ocupar toda altura */
     height: 100%;
+
+    /* Arredonda a imagem */
     border-radius: 15px;
 }
 
 .item:hover {
+
+    /* Aumenta o tamanho do card */
     transform: scale(1.05);
+
+    /* Mantém cursor padrão */
     cursor: default;
 }
 
 .overlay {
+
+    /*
+       Faz a camada ficar posicionada
+       em relação ao .item
+    */
     position: absolute;
+
+    /* Cola no topo */
     top: 0;
+
+    /* Cola na esquerda */
     left: 0;
 
+    /* Ocupa toda largura */
     width: 100%;
+
+    /* Ocupa toda altura */
     height: 100%;
 
+    /* Fundo preto transparente */
     background: rgba(0, 0, 0, 0.4);
 
+    /* Ativa flexbox */
     display: flex;
+
+    /* Centraliza horizontalmente */
     justify-content: center;
+
+    /* Centraliza verticalmente */
     align-items: center;
 
+    /* Tamanho do texto */
     font-size: 40px;
+
+    /* Cor do texto */
     color: white;
 
+    /* Começa invisível */
     opacity: 0;
+
+    /* Anima a transparência */
     transition: 0.3s;
+
+    /* Cursor vira mãozinha */
     cursor: pointer;
 }
 
 .item:hover .overlay {
+
+    /* Faz o overlay aparecer */
     opacity: 1;
 }
 
 .titulo {
+
+    /* Fonte chamativa */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /* Permite mover usando left */
     position: relative;
+
+    /* Move 10px para a direita */
     left: 10px;
+
+    /* Tamanho do texto */
     font-size: 40px;
+
+    /* Centraliza dentro do flexbox */
     align-self: center;
+
+    /* Impede quebra de linha */
     white-space: nowrap;
 }
 
 .titulo-card {
+
+    /* Fonte do título */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /* Posicionamento livre */
     position: absolute;
+
+    /* Distância da esquerda */
     left: 10px;
+
+    /* Distância da parte inferior */
     bottom: 10px;
+
+    /* Tamanho da letra */
     font-size: 18px;
+
+    /* Cor branca */
     color: white;
+
+    /* Impede quebra de linha */
     white-space: nowrap;
 }
 
-/*Predefinições gerais de todos os estilos*/
+/* Predefinições gerais dos estilos */
 
 .estilo,
 .estilo2,
 .estilo3,
 .estilo4 {
+
+    /* Largura inicial */
     width: 100px;
+
+    /* Altura */
     height: 50px;
+
+    /* Espaço acima */
     margin-top: 30px;
+
+    /* Espaço à esquerda */
     margin-left: 10px;
+
+    /*
+       Valor negativo aproxima
+       o elemento de cima
+    */
     margin-bottom: -50px;
+
+    /* Espaço à direita */
     margin-right: 200px;
+
+    /* Faz animações suaves */
     transition: 0.5s;
 }
 
-/*Predefinições específicas de cada estilos*/
+/* Cores individuais */
 
 .estilo {
+
+    /* Cor azul esverdeada */
     background-color: rgb(0, 255, 208);
 }
 
 .estilo2 {
+
+    /* Cor vermelha */
     background-color: rgb(255, 72, 72);
 }
 
 .estilo3 {
+
+    /* Cor verde clara */
     background-color: rgb(160, 255, 72);
 }
 
 .estilo4 {
+
+    /* Cor amarela */
     background-color: rgb(255, 209, 72);
+
+    /* Transição um pouco mais lenta */
     transition: 0.6s;
 }
 
-/*:hover de todos os estilos*/
+/* Hover geral */
 
 .estilo:hover,
 .estilo2:hover,
 .estilo3:hover,
 .estilo4:hover {
+
+    /* Cursor vira mãozinha */
     cursor: pointer;
+
+    /* Expande largura */
     width: 500px;
 }
 
-/*Ajustes nos tamanhos devido à variações nos tamanhos dos textos*/
+/* Ajustes específicos */
 
 .estilo3:hover {
+
+    /* Expande menos */
     width: 300px;
 }
 
 .estilo4:hover {
+
+    /* Expande mais */
     width: 700px;
 }
 
 .box-rec {
+
+    /* Espaço interno à esquerda */
     padding-left: 10px;
+
+    /* Centraliza verticalmente */
     align-items: center;
+
+    /* Ativa flexbox */
     display: flex;
+
+    /* Espaça os elementos */
     justify-content: space-between;
 }
 
 .imagem img {
+
+    /* Define largura fixa */
     width: 400px;
+
+    /* Limita largura máxima */
     max-width: 400px;
+
+    /* Arredonda bordas */
     border-radius: 20px;
 }
 
 .box-eminem {
+
+    /* Ativa Grid Layout */
     display: grid;
+
+    /* Divide em 2 colunas iguais */
     grid-template-columns: 1fr 1fr;
 }
 
-.box-centro{
-    display:flex;
+.box-centro {
+
+    /* Ativa flexbox */
+    display: flex;
+
+    /* Organiza em coluna */
     flex-direction: column;
+
+    /* Centraliza verticalmente */
     align-self: center;
 }
 
-.musica{
-    display:flex;
-    margin:20px;
-    margin-top:0;
-    padding:5px;
+.musica {
+
+    /* Ativa flexbox */
+    display: flex;
+
+    /* Margem geral */
+    margin: 20px;
+
+    /* Remove margem de cima */
+    margin-top: 0;
+
+    /* Espaço interno */
+    padding: 5px;
+
+    /* Centraliza verticalmente */
     align-items: center;
-    transition:0.2s;
-    border-radius:10px;
+
+    /* Animações suaves */
+    transition: 0.2s;
+
+    /* Bordas arredondadas */
+    border-radius: 10px;
 }
 
-.musica:hover{
+.musica:hover {
+
+    /* Fundo cinza transparente */
     background-color: rgba(80, 80, 80, 0.374);
-    cursor:pointer;
+
+    /* Cursor vira mãozinha */
+    cursor: pointer;
 }
 
-.top{
-    margin-left:20px;
+.top {
+
+    /* Espaço à esquerda */
+    margin-left: 20px;
 }
 
-.mus-titulo{
-    font-size:30px;
+.mus-titulo {
+
+    /* Tamanho da fonte */
+    font-size: 30px;
+
+    /* Justifica o texto */
     text-align: justify;
 }
 
-.mus-album{
-    color:gray;
-    font-size:20px;
+.mus-album {
+
+    /* Cor cinza */
+    color: gray;
+
+    /* Tamanho da fonte */
+    font-size: 20px;
+
+    /* Justifica o texto */
     text-align: justify;
 }
 
-.numero{
-    font-size:40px;
+.numero {
+
+    /* Tamanho do número */
+    font-size: 40px;
 }
 
 .box-dir {
+
+    /* Ativa flexbox */
     display: flex;
+
+    /* Organiza em coluna */
     flex-direction: column;
-    margin-right:10px;
+
+    /* Espaço à direita */
+    margin-right: 10px;
 }
 
 .album {
+
+    /* Ativa flexbox */
     display: flex;
+
+    /* Centraliza verticalmente */
     align-items: center;
-    padding:10px;
+
+    /* Espaço interno */
+    padding: 10px;
+
+    /* Transição suave */
     transition: 0.2s;
+
+    /* Bordas arredondadas */
     border-radius: 20px;
-    margin:5px;
+
+    /* Espaço externo */
+    margin: 5px;
 }
 
 .album:hover {
-    cursor:pointer;
+
+    /* Cursor vira mãozinha */
+    cursor: pointer;
+
+    /* Fundo transparente ao passar o mouse */
     background-color: rgba(80, 80, 80, 0.374);
 }
 
 .numero2 {
+
+    /* Tamanho do texto */
     font-size: 40px;
+
+    /* Espaço à direita */
     margin-right: 20px;
 }
 
 .album img {
+
+    /* Define largura */
     width: 80px;
+
+    /* Arredonda bordas */
     border-radius: 10px;
 }
 
-.album-tit{
-    margin-left:20px;
-    font-size:20px;
+.album-tit {
+
+    /* Espaço à esquerda */
+    margin-left: 20px;
+
+    /* Tamanho da fonte */
+    font-size: 20px;
+
+    /* Justifica o texto */
     text-align: justify;
 }
 
-.box-titulos{
-    margin-top:80px;
-    display:grid;
+.box-titulos {
+
+    /* Espaço acima */
+    margin-top: 80px;
+
+    /* Ativa grid */
+    display: grid;
+
+    /* Cria 3 colunas iguais */
     grid-template-columns: 1fr 1fr 1fr;
-    font-size:30px;
+
+    /* Tamanho da fonte */
+    font-size: 30px;
+
+    /* Centraliza verticalmente */
     align-items: center;
+
+    /* Fonte dos títulos */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.tit-box-esq{
-    font-size:40px;
+.tit-box-esq {
+
+    /* Tamanho maior */
+    font-size: 40px;
 }
 
-.tit-box-dir{
+.tit-box-dir {
+
+    /* Alinha no começo da célula */
     justify-self: start;
-    margin-left:50px;
+
+    /* Espaço à esquerda */
+    margin-left: 50px;
 }

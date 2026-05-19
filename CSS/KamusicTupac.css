@@ -2,13 +2,13 @@ body {
     background-image: url(../IMG/Background2.png);
 }
 
-a {
+.main a {
     color: black;
     text-decoration: underline 3px rgb(177, 177, 177);
     transition: 0.2s;
 }
 
-a:hover{
+.main a:hover{
     text-decoration: underline 3px rgb(123, 123, 123);
 }
 
@@ -32,7 +32,6 @@ a:hover{
 .mus-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, auto);
     margin-top: 20px;
     align-items: center;
     gap: 70px;
@@ -43,7 +42,6 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-items: start;
     gap: 5px;
 }
 
@@ -155,7 +153,6 @@ a:hover{
 
 .texto-album h1 {
     font-size: 20px;
-    gap: -100px;
     max-width: 170px;
     margin-bottom: -10px;
 }

@@ -2,27 +2,6 @@ body {
     background-image: url(../IMG/Background2.png);
 }
 
-.texto img{
-    width:95%;
-    cursor:pointer;
-    user-select: none;
-    transition:0.2s;
-    border-radius:5px;
-}
-
-.texto img:hover{
-    transform: scale(1.02);
-}
-
-.h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 70px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-}
-
 h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 32px;
@@ -42,6 +21,4 @@ h3 {
 b {
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 0px;
 }

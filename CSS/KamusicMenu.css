@@ -335,9 +335,12 @@ footer {
 
 footer hr {
     margin-top: auto;
+    margin-bottom: 20px;
 }
 
-footer b { font-size: 40px;}
+footer b {
+    font-size: 40px;
+}
 
 .divulg {
     justify-content: center;
@@ -346,8 +349,8 @@ footer b { font-size: 40px;}
 }
 
 .divulg img {
-    margin: 40px;
-    max-width: 100px;
+    margin: 20px;
+    width: 60px;
 }
 
 

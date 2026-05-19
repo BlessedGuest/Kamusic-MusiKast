@@ -78,10 +78,6 @@ a {
 
     /* Cor de fundo */
     background-color: rgb(25, 25, 25);
-
-    /* Faz o item crescer */
-    flex-grow: 1;
-
     /* Herda altura do pai */
     height: inherit;
 
@@ -108,16 +104,11 @@ a {
 }
 
 .item:hover {
-
     /* Aumenta o tamanho do card */
     transform: scale(1.05);
-
-    /* Mantém cursor padrão */
-    cursor: default;
 }
 
 .overlay {
-
     /*
        Faz a camada ficar posicionada
        em relação ao .item

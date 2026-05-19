@@ -40,16 +40,14 @@ body {
     /* Muda a cor do texto para branco */
     font-size: 80px;
     /* Define um tamanho de letra muito grande */
-    margin-top: -30px;
-    /* Puxa o título ligeiramente para cima */
-    margin-bottom: 30px;
-    /* Cria um espaço vazio logo abaixo do título */
-    font-weight: 20;
+    font-weight: 20;    
     /* Define a espessura da letra como muito fina */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* Define as fontes do texto */
     user-select: none;
     /* Impede que o usuário consiga selecionar o texto com o mouse */
+    margin-bottom: 30px;
+    /* Cria um espaço vazio logo abaixo do título */
     margin-left: 75px;
     /* Empurra o texto 100 pixels para a direita */
     margin-top: 40px;
@@ -181,8 +179,6 @@ body {
     /* Fixa a altura deste menu em 50 pixels */
     background-color: rgb(47, 47, 47);
     /* Define o fundo cinza escuro */
-    width: 100%;
-    /* Faz o menu ocupar toda a largura esquerda-direita da tela */
     position: sticky;
     /* Efeito flutuante: fixa o menu no topo quando o usuário rolar a página */
     top: 0;
@@ -210,8 +206,6 @@ body {
     /* Espessura de letra fina */
     align-self: center;
     /* Centraliza este item verticalmente em relação ao menu */
-    justify-self: center;
-    /* Tenta centralizar horizontalmente */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* Define as fontes */
     transition: 0.2s;
@@ -341,9 +335,12 @@ footer {
 
 footer hr {
     margin-top: auto;
+    margin-bottom: 20px;
 }
 
-footer b { font-size: 40px;}
+footer b {
+    font-size: 40px;
+}
 
 .divulg {
     justify-content: center;
@@ -352,14 +349,14 @@ footer b { font-size: 40px;}
 }
 
 .divulg img {
-    margin: 40px;
-    max-width: 100px;
+    margin: 20px;
+    width: 60px;
 }
 
 
 .main {
+    margin:40px;
     margin-top: 0px;
-    padding: 70px;
     padding-top: 0px;
     text-align: center;
 }

@@ -13,6 +13,30 @@ a {
     color: black;
 }
 
+.titulo-card {
+
+    /* Fonte do título */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /* Posicionamento livre */
+    position: absolute;
+
+    /* Distância da esquerda */
+    left: 10px;
+
+    /* Distância da parte inferior */
+    bottom: 10px;
+
+    /* Tamanho da letra */
+    font-size: 18px;
+
+    /* Cor branca */
+    color: white;
+
+    /* Impede quebra de linha */
+    white-space: nowrap;
+}
+
 .conteiner-geral {
 
     /* Adiciona espaço acima do container */
@@ -20,18 +44,13 @@ a {
 }
 
 .conteiner {
-
+    padding: 20px 20px 20px 10px;
     /* Espaçamento interno em todos os lados */
-    padding: 20px;
-
     /* Espaçamento interno apenas na esquerda */
-    padding-left: 10px;
 
+    margin: 50px 0;
     /* Espaço abaixo */
-    margin-bottom: 50px;
-
     /* Espaço acima */
-    margin-top: 50px;
 
     /* Altura fixa */
     height: 220px;
@@ -55,41 +74,10 @@ a {
     align-items: center;
 }
 
-.exemplo {
-
-    /* Cor de fundo escura */
-    background-color: rgb(25, 25, 25);
-
-    /* Faz o elemento crescer ocupando espaço disponível */
-    flex-grow: 1;
-
-    /* Herda a altura do container pai */
-    height: inherit;
-
-    /* Arredonda as bordas */
-    border-radius: 25px;
-
-    /* Cria animações suaves */
-    transition: 0.2s;
-
-    /*
-       Permite posicionar elementos absolutos
-       dentro dele
-    */
-    position: relative;
-
-    /* Esconde partes que ultrapassarem */
-    overflow: hidden;
-}
-
 .item {
 
     /* Cor de fundo */
     background-color: rgb(25, 25, 25);
-
-    /* Faz o item crescer */
-    flex-grow: 1;
-
     /* Herda altura do pai */
     height: inherit;
 
@@ -113,64 +101,43 @@ a {
 
     /* Faz a imagem ocupar toda altura */
     height: 100%;
-
-    /* Arredonda a imagem */
-    border-radius: 15px;
 }
 
 .item:hover {
-
     /* Aumenta o tamanho do card */
     transform: scale(1.05);
-
-    /* Mantém cursor padrão */
-    cursor: default;
 }
 
 .overlay {
-
     /*
        Faz a camada ficar posicionada
        em relação ao .item
     */
     position: absolute;
-
     /* Cola no topo */
     top: 0;
-
     /* Cola na esquerda */
     left: 0;
-
     /* Ocupa toda largura */
     width: 100%;
-
     /* Ocupa toda altura */
     height: 100%;
-
     /* Fundo preto transparente */
     background: rgba(0, 0, 0, 0.4);
-
     /* Ativa flexbox */
     display: flex;
-
     /* Centraliza horizontalmente */
     justify-content: center;
-
     /* Centraliza verticalmente */
     align-items: center;
-
     /* Tamanho do texto */
     font-size: 40px;
-
     /* Cor do texto */
     color: white;
-
     /* Começa invisível */
     opacity: 0;
-
     /* Anima a transparência */
     transition: 0.3s;
-
     /* Cursor vira mãozinha */
     cursor: pointer;
 }
@@ -197,30 +164,6 @@ a {
 
     /* Centraliza dentro do flexbox */
     align-self: center;
-
-    /* Impede quebra de linha */
-    white-space: nowrap;
-}
-
-.titulo-card {
-
-    /* Fonte do título */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-    /* Posicionamento livre */
-    position: absolute;
-
-    /* Distância da esquerda */
-    left: 10px;
-
-    /* Distância da parte inferior */
-    bottom: 10px;
-
-    /* Tamanho da letra */
-    font-size: 18px;
-
-    /* Cor branca */
-    color: white;
 
     /* Impede quebra de linha */
     white-space: nowrap;
@@ -335,9 +278,6 @@ a {
     /* Define largura fixa */
     width: 400px;
 
-    /* Limita largura máxima */
-    max-width: 400px;
-
     /* Arredonda bordas */
     border-radius: 20px;
 }
@@ -396,37 +336,30 @@ a {
     cursor: pointer;
 }
 
-.top {
-
-    /* Espaço à esquerda */
-    margin-left: 20px;
-}
-
 .mus-titulo {
-
     /* Tamanho da fonte */
     font-size: 30px;
+}
 
+.mus-titulo, .mus-album{
     /* Justifica o texto */
     text-align: justify;
 }
 
 .mus-album {
-
     /* Cor cinza */
     color: gray;
 
     /* Tamanho da fonte */
     font-size: 20px;
-
-    /* Justifica o texto */
-    text-align: justify;
 }
 
 .numero {
 
     /* Tamanho do número */
     font-size: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .box-dir {
@@ -460,6 +393,8 @@ a {
 
     /* Espaço externo */
     margin: 5px;
+
+    width: 400px;
 }
 
 .album:hover {
@@ -490,6 +425,8 @@ a {
 }
 
 .album-tit {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
 
     /* Espaço à esquerda */
     margin-left: 20px;
@@ -518,6 +455,8 @@ a {
     /* Centraliza verticalmente */
     align-items: center;
 
+    justify-items: center;
+
     /* Fonte dos títulos */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -526,13 +465,6 @@ a {
 
     /* Tamanho maior */
     font-size: 40px;
-}
-
-.tit-box-dir {
-
-    /* Alinha no começo da célula */
     justify-self: start;
-
-    /* Espaço à esquerda */
-    margin-left: 50px;
+    margin-left: 10px;
 }

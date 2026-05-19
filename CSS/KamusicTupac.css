@@ -1,135 +1,203 @@
-body{
+body {
     background-image: url(../IMG/Background2.png);
 }
 
-.titulos{
-    margin-top:40px;
-    margin-bottom:10px;
-    display:grid;
-    gap:20px;
+.main a {
+    color: black;
+    text-decoration: underline 3px rgb(177, 177, 177);
+    transition: 0.2s;
+}
+
+.main a:hover{
+    text-decoration: underline 3px rgb(123, 123, 123);
+}
+
+.titulos {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: grid;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
-    font-size:40px;
+    font-size: 40px;
     font-weight: bold;
     justify-items: start;
 }
 
-.mus-album{
-    display:grid;
+.mus-album {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
-.mus-box{
-    display:flex;
-    flex-direction: row;
-    margin-top:20px;
+.mus-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
     align-items: center;
-    gap:80px;
+    gap: 70px;
+    width: 100%;
 }
 
-.musica-col{
-    display:flex;
+.musica-col {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items:start;
-    gap:5px;
+    align-items: flex-start;
+    gap: 5px;
 }
 
-.mus-esp{
-    display:flex;
+.mus-esp {
+    display: flex;
     text-align: justify;
-    padding:5px;
-    max-width: 200px;
-    padding-right:50px;
+    padding: 5px;
+    max-width: 220px;
+    padding-right: 50px;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
     transition: 0.2s;
 }
 
-.mus-esp:hover{
+.mus-esp:hover {
     background-color: rgba(144, 142, 142, 0.2);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.152);
 }
 
-.mus-info-box{
-    margin-right:20px;
+.mus-esp:hover>.numero-musica {
+    color: black;
+}
+
+.mus-info-box {
+    margin-right: 20px;
     align-self: center;
-    margin-left:12px;
+    margin-left: 12px;
 }
 
-.numero-musica{
+.numero-musica {
     text-align: center;
     font-size: 40px;
-    align-self:center;
+    align-self: center;
     min-width: 60px;
+    max-width: 80px;
     font-weight: bold;
-    border-radius:100px;
-    color:rgb(170, 169, 169);
+    border-radius: 100px;
+    color: rgb(170, 169, 169);
+    transition: 0.2s;
 }
 
-.nome-musica{
+.nome-musica {
     font-size: 20px;
-    min-width:190px;
-    max-width:200px;
+    min-width: 190px;
+    max-width: 200px;
 }
 
-.album-musica{
-    color:gray;
+.album-musica {
+    color: gray;
     font-size: 14px;
 }
 
-.album-box img{
-    width:65px;
+.album-box img {
+    width: 80px;
     border-radius: 90px;
 }
 
-.album-box{
-    display:flex;
+.album-box {
+    display: flex;
     flex-direction: column;
-    gap:10px;
     width: 100%;
     align-self: center;
 }
 
-.album-esp{
-    display:flex;
+.album-esp {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.album{
+.album {
     text-align: justify;
-    gap:10px;
-    flex:1;
-    display:flex;
+    gap: 10px;
+    flex: 1;
+    display: flex;
     align-items: center;
     justify-self: center;
-    padding:5px;
-    margin:2px;
-    transition:0.2s;
-    cursor:pointer;
+    padding: 3px;
+    margin: 2px;
+    transition: 0.2s;
+    cursor: pointer;
     border-radius: 100px;
 }
 
-.album:hover{
+.album:hover {
     background-color: rgba(144, 142, 142, 0.2);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.152);
 }
 
-.texto-album{
-    display:flex;
+.album:hover>.contagem {
+    color: black;
+}
+
+.texto-album,
+.contagem {
+    display: flex;
     flex-direction: column;
     text-align: justify;
 }
 
-.texto-album h1{
-    font-size:20px;
-    gap:-100px;
-    max-width:170px;
-    margin-bottom:-10px;
+.contagem {
+    font-size: 30px;
+    color: gray;
+    margin-right: 10px;
+    align-self: center;
+    transition: 0.2s;
 }
 
-.texto-album p{
-    font-size:15px;
-    max-width:200px;
-    color:gray;
+.texto-album h1 {
+    font-size: 20px;
+    max-width: 170px;
+    margin-bottom: -10px;
+}
+
+.texto-album p {
+    font-size: 15px;
+    max-width: 200px;
+    color: gray;
+}
+
+.artista-info{
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+    margin-top:40px;
+    padding-top: 5px;
+    color: #000000;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.363);
+    border-radius: 20px;
+}
+
+.artista-info h2{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #000000;
+    border-left: 5px solid #888;
+    padding-left: 15px;
+}
+
+.artista-info h3{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.artista-info p{
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    text-indent: 1em;
+}
+
+.citacao{
+    text-align: center;
 }

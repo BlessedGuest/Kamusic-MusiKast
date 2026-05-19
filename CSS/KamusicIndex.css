@@ -415,6 +415,8 @@ a {
 
     /* Espaço externo */
     margin: 5px;
+
+    width: 400px;
 }
 
 .album:hover {
@@ -445,6 +447,8 @@ a {
 }
 
 .album-tit {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
 
     /* Espaço à esquerda */
     margin-left: 20px;

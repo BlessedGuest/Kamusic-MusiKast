@@ -123,43 +123,30 @@ a {
        em relação ao .item
     */
     position: absolute;
-
     /* Cola no topo */
     top: 0;
-
     /* Cola na esquerda */
     left: 0;
-
     /* Ocupa toda largura */
     width: 100%;
-
     /* Ocupa toda altura */
     height: 100%;
-
     /* Fundo preto transparente */
     background: rgba(0, 0, 0, 0.4);
-
     /* Ativa flexbox */
     display: flex;
-
     /* Centraliza horizontalmente */
     justify-content: center;
-
     /* Centraliza verticalmente */
     align-items: center;
-
     /* Tamanho do texto */
     font-size: 40px;
-
     /* Cor do texto */
     color: white;
-
     /* Começa invisível */
     opacity: 0;
-
     /* Anima a transparência */
     transition: 0.3s;
-
     /* Cursor vira mãozinha */
     cursor: pointer;
 }
